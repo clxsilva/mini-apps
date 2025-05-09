@@ -4,21 +4,21 @@
  */
 
 // função para validação de maioridade
-function validar(event) {
+function validate(event) {
     // a linha abaixo desabilita o comportamento padrão de envio do formulário
     event.preventDefault()
     // alert("teste de envio")
-    let nome = document.getElementById('nome').value
+    let nome = document.getElementById('name').value
     // alert(nome)
     // console.log(nome)
-    let idade = document.getElementById('idade').value
+    let idade = document.getElementById('age').value
 
     // saída
-    document.getElementById('aluno').value = `Aluno: ${nome}`
+    document.getElementById('student').value = `Student: ${nome}`
 
     if (idade < 18) {
-        document.getElementById('status').value = "Menor de idade"
+        document.getElementById('status').value = "Under age"
     } else {
-        document.getElementById('status').value = "Maior de idadae"
+        document.getElementById('status').value = "Of age"
     }
 } 

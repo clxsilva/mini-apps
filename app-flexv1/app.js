@@ -3,7 +3,7 @@
  * @author Claudio Silva
  */
 
-function calcular(event) {
+function calculate(event) {
     event.preventDefault()
     let etanol = document.getElementById('txtEtanol').value
     let gasolina = document.getElementById('txtGasolina').value
@@ -14,6 +14,6 @@ function calcular(event) {
     }
 }
 
-function limpar() {
+function clean() {
     document.getElementById('status').src="img/neutro.png"
 }
